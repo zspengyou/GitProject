@@ -6,8 +6,8 @@ public class StrStr3 {
 
     public static void main(String[] args) {
         StrStr3 test = new StrStr3();
-        String source = "abcdef";
-        String target = "e";
+        String source = "mississippi";
+        String target = "issip";
         int result = test.strStr(source, target);
         System.out.println(result);
     }
