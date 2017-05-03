@@ -9,10 +9,4 @@ public class TreeNode {
         this.val = val;
         this.left = this.right = null;
     }
-
-    public static void main(String[] args) {
-
-    	
-    }
-
 }
