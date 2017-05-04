@@ -18,6 +18,21 @@ be careful about global variable=> http://www.lintcode.com/en/problem/maximum-de
 
 when deal with linkedlist => careful about break the old link =>http://www.lintcode.com/en/problem/flatten-binary-tree-to-linked-list/
 
+iterate linkedlist => current = current.next
+if (node.val < node.next.val && x >= node.val && x <= node.next.val)
+vs 
+if (node.val > node.next.val && (x >= node.val || x <= node.next.val))
+one is && the other is ||
+
+for cyclic linked list==> while (node.next != dummy.next) means ( while node is not the last node)
+
+number of islands ==> if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length)
+
+queue => offer, poll, isEmpty, size
+result.add(tmpResult);// keep in mind, don't forget to update the result
+
+
+
 
 
 git: gmail
