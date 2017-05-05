@@ -31,6 +31,11 @@ number of islands ==> if (row < 0 || row >= grid.length || col < 0 || col >= gri
 queue => offer, poll, isEmpty, size
 result.add(tmpResult);// keep in mind, don't forget to update the result
 
+two pointer
+ 	think twice about when each of the pointer should move, 
+	what is the boundary for each pointer, 
+	how to deal with the value with the value when condition satisfies
+
 
 
 
