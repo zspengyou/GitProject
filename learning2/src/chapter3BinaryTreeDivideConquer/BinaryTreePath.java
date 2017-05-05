@@ -14,6 +14,14 @@ public class BinaryTreePath {
     }
 
     private void dfs(TreeNode root, String previousPath, List<String> result) {
-
+        String currentPath = previousPath + root.val + "->";
+        if(root.left == null && root.right == null){
+            currentPath = currentPath.substring(0,currentPath.length()-2);
+            result.add(currentPath);
+        }
+        if(root.left != null)
+            dfs(root.left, currentPath,result);
+        if(root.right != null)
+            dfs(root.right,currentPath,result);
     }
 }
