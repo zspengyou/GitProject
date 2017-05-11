@@ -36,7 +36,9 @@ two pointer
 	what is the boundary for each pointer, 
 	how to deal with the value with the value when condition satisfies
 
-
+Valid parentheses
+create stack
+getThePair
 
 
 
