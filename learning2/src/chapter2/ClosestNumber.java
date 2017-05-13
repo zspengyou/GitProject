@@ -6,7 +6,7 @@ public class ClosestNumber {
         ClosestNumber test = new ClosestNumber();
         int[] nums = new int[]{1,4,6,10,20};
         int target = 21;
-        int result = test.closestNumber(nums, target);
+        // int result = test.closestNumber(nums, target);
 //        System.out.println(result);
         System.err.println("the condition for while loop is: high - low should be greater than 1");
        
