@@ -37,7 +37,7 @@ while (node.next != dummy.next) means ( while node is not the last node)
 * what is the boundary for each pointer, 
 * how to deal with the value with the value when condition satisfies
 
-## alid parentheses
+## valid parentheses
 * create stack
 * getThePair
 
