@@ -43,6 +43,16 @@ test3: all equal to target
 	traditional: 
 		if move end => -1
 		if move start => n
+=======
+two pointer
+ 	think twice about when each of the pointer should move, 
+	what is the boundary for each pointer, 
+	how to deal with the value with the value when condition satisfies
+
+Valid parentheses
+create stack
+getThePair
+
 
 
 template: 	condtion is " end - start >= 2 "	
