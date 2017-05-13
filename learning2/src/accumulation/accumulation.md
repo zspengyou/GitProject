@@ -1,84 +1,65 @@
-Learning for Subtree with Maximum Average
-use global varible (instance variable), to reduce the number of variable passed in.
-think twice about what to return 
-think twice about how to update the result 
-	* compare with current node or need to compare with root.left root.right
-	* when min, greater than => update 
-	* when max, less than => update
-subString(startIndex, startIndex+length  or endIndex + 1)
+## Subtree with Maximum Average
 
-for loop has two lines, the second one is not included in
-greater than or less than 
+* use global varible (instance variable, to reduce the number of variable passed in.
+* think twice about what to return 
+* think twice about how to update the result 
+
+* compare with current node or need to compare with root.left root.right
+* when min, greater than => update 
+* when max, less than => update
+
+
+## be careful about global variable
+http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
+
+## careful about break the old link
+http://www.lintcode.com/en/problem/flatten-binary-tree-to-linked-list/
+
+## for cyclic linked list
+```
+while (node.next != dummy.next) means ( while node is not the last node)
+```
+
+## number of islands 
+```
+ if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length)
+```
+
+## queue 
+
+`offer, poll, isEmpty, size`
+
+## don't forget to update the result
+`result.add(tmpResult);// keep in mind, `
+
+## two pointer
+* think twice about when each of the pointer should move, 
+* what is the boundary for each pointer, 
+* how to deal with the value with the value when condition satisfies
+
+## alid parentheses
+* create stack
+* getThePair
+
+
+## note 
+```
 nums[i] or nums[j]
 nums[len-1] or nums[len - i -1]
 loop => i++
+```
+`subString(startIndex, startIndex+length  or endIndex + 1)`
 
+`iterate linkedlist => current = current.next`
 
-be careful about global variable=> http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
-
-when deal with linkedlist => careful about break the old link =>http://www.lintcode.com/en/problem/flatten-binary-tree-to-linked-list/
-
-iterate linkedlist => current = current.next
+```java
 if (node.val < node.next.val && x >= node.val && x <= node.next.val)
 vs 
 if (node.val > node.next.val && (x >= node.val || x <= node.next.val))
+
 one is && the other is ||
+```
 
-for cyclic linked list==> while (node.next != dummy.next) means ( while node is not the last node)
-
-number of islands ==> if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length)
-
-queue => offer, poll, isEmpty, size
-result.add(tmpResult);// keep in mind, don't forget to update the result
-
-
-binary search: 
-test1: all greater than target
-	traditional: start => 0; end=> -1 or 0
-	template: start = 0; end => 1
-test2: all less than 
-	traditional: start => n-2
-	template: start => n-2
-test3: all equal to target
-	traditional: 
-		if move end => -1
-		if move start => n
-=======
-two pointer
- 	think twice about when each of the pointer should move, 
-	what is the boundary for each pointer, 
-	how to deal with the value with the value when condition satisfies
-
-Valid parentheses
-create stack
-getThePair
-
-
-
-template: 	condtion is " end - start >= 2 "	
-			=> mid = start + (end - start)/2 > start
-			=> mid = end - (end - start)/2 < end
-			=> every time mid is different from start and end
-
-traditional: 	when start < end
-				start <= mid = start + (end - start)/2 < end
-				if start = mid + 1 ==> start <= end
-				if end = mid -1, end <=start
-
-				all is less than the target
-				=> start will always move to end
-
-				all is greater than target
-				=> end might move to start or move to before start
-
-find first:	when equal	=> end = mid
-           	when break out 	=> check start
-           					=> check end is valid and check end
-           					=> return invalid
-find last: 	when equal 	=> start = mid  ( double check to avoid infinite loop)
-			when break out 	=> check end is valid, check end
-							=> check start
-							=> return invalid	           					
 
 
 git: gmail
