@@ -1,3 +1,7 @@
+package chapter7TwoPointer;
+
+import java.util.HashMap;
+import java.util.Set;
 
 // http://www.lintcode.com/en/problem/two-sum-data-structure-design/
 
@@ -11,7 +15,7 @@
 
 public class TwoSum2{
 	private HashMap<Integer, Integer> num2count;
-	public TwoSum(){
+	public TwoSum2(){
 		num2count = new HashMap<Integer, Integer>();
 	}
 	public void add(int val){
@@ -31,7 +35,7 @@ public class TwoSum2{
 				if(count >= 2)
 					return true;
 			}else{
-				if(num2count.containskey(diff))
+				if(num2count.containsKey(diff))
 					return true;
 			}
 		}

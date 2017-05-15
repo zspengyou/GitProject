@@ -30,7 +30,7 @@ public class LastPosOfTarget {
 
     }
 
-    public latPosOfTarget(int[] nums, int target){
+    public int latPosOfTarget(int[] nums, int target){
         if(nums == null || nums.length == 0)
             return -1;
         int start = 0;
@@ -50,7 +50,7 @@ public class LastPosOfTarget {
         }
         if(end > 0 && nums[end] == target)
             return end;
-        if(nums[start] == target
+        if(nums[start] == target)
             return start;        
         return -1;
         
@@ -63,7 +63,7 @@ public class LastPosOfTarget {
         
     }
 
-    public firstPos(int[] nums, int target){
+    public int firstPos(int[] nums, int target){
         if(nums == null || nums.length == 0)
             return -1;
         int start = 0;
@@ -86,7 +86,7 @@ public class LastPosOfTarget {
         return -1;
     }
 
-    public int test(){
+    public int test(int [] nums, int target){
         if(nums == null || nums.length == 0)
             return -1;
         int start = 0;
